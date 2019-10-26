@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Form, Input } from '@rocketseat/unform';
 
+import logo from '../../assets/logo.svg';
+
 import { signInRequest } from '../../store/modules/auth/actions';
 
 export default function SignIn() {
@@ -14,6 +16,8 @@ export default function SignIn() {
 
   return (
     <>
+      <img src={logo} alt="MeetApp" />
+
       <Form onSubmit={handleSubmit}>
         <Input name="email" type="email" placeholder="Seu e-mail" />
         <Input

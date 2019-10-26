@@ -9,14 +9,14 @@ import history from './services/history';
 
 import store from './store';
 
-import GLobalStyle from './styles/global';
+import GlobalStyle from './styles/global';
 
 function App() {
   return (
     <Provider store={store}>
       <Router history={history}>
         <Routes />
-        <GLobalStyle />
+        <GlobalStyle />
       </Router>
     </Provider>
   );
